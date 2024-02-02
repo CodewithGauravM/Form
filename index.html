@@ -8,118 +8,162 @@
 </head>
 
 <body>
-    <header>
-        <h1>Form Tag</h1>
-    </header>
-    <section>
-        <h2>Personal Details</h2>
-        <input type="text" placeholder="Enter Full Name">
-        <input type="text" placeholder="Enter Nickname">
-        <label>Birth date:</label> <input type="date">
-        <label for="">Gender</label>
-        <input type="radio" name="Gender">male
-        <input type="radio" name="Gender">female
-        <input type="text" placeholder="Enter Nationality">
-        <label for="">Marital Status:</label>
-        <input type="radio" name="Marital">married
-        <input type="radio" name="Marital">unmaried
-    </section>
+    <form>
+        <header>
+            <h1>Form Tag</h1>
+        </header>
+        <section>
+            <h2>Personal Details</h2>
+            <input type="text" required placeholder="Enter Full Name"> <br>
+            <input type="text" required placeholder="Enter Nickname"><br>
+            <label>Birth date:</label> <input type="date"><br>
+            <label for="">Gender</label>
+            <select>
+                <option>male</option>
+                <option>female</option>
+                <option>TG</option>
+            </select> <br>
+            <input required type="text" placeholder="Enter Nationality"><br>
+            <label for="">Marital Status:</label>
+            <select>
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </section>
 
-    <section>
-        <h2>Educational Qualification</h2>
-        <input type="number" placeholder="Enter Graduation mark">
-        <input type="number" placeholder="Enter HSC/Diploma mark">
-        <input type="number" placeholder="Enter SSC mark">
-    </section>
+        <section>
+            <h2>Educational Qualification</h2>
+            <label>Graduation</label>
+            <select>
+                <option>BE/B.Tech</option>
+                <option>B.Arch</option>
+                <option>BCA</option>
+                <option>B.Sc</option>
+                <option>B.Sc- Nursing.</option>
+                <option>BPharma</option>
+                <option>B.Sc- Interior Design.</option>
+                <option>BDS</option>
+            </select> <br>
+            <input type="text" placeholder="University Name"><input type="number" placeholder="Graduation mark"><input
+                type="number" placeholder="Passout year">
+            <label>HSC/Diploma</label> <br>
+            <input type="text" placeholder="University Name"><input type="number" placeholder="HSC/Diploma mark"><input
+                type="number" placeholder="Passout year"><br>
+            <label>SSC</label><br>
+            <input type="text" placeholder="University Name"><input type="number" placeholder="SSC mark"><input
+                type="number" placeholder="Passout year">
+        </section>
 
-    <section>
-        <h2>Fmiliy Details</h2>
-        <input type="number" placeholder="Enter Total Family Member">
-        <input type="number" placeholder="Enter Number of Brothers">
-        <input type="number" placeholder="Enter Number of Sisters">
-        <input type="text" placeholder="Enter Father Name">
-        <input type="text" placeholder="Enter Father's profession">
-        <input type="number" placeholder="Phone Number(Father)">
-        <input type="text" placeholder="Enter Mother profession">
-        <input type="number" placeholder="Phone Number(Mother)">
-    </section>
+        <section>
+            <h2>Fmiliy Details</h2>
+            <input required type="number" placeholder="Enter Total Family Member"><br>
+            <input required type="number" placeholder="Enter Number of Brothers"><br>
+            <input required type="number" placeholder="Enter Number of Sisters"><br>
+            <input required type="text" placeholder="Enter Father Name"><br>
+            <input required type="text" placeholder="Enter Father's profession"><br>
+            <input required type="number" placeholder="Phone Number(Father)"><br>
+            <input required type="text" placeholder="Enter Mother profession"><br>
+            <input required type="number" placeholder="Phone Number(Mother)"><br>
+        </section>
 
-    <section>
-        <h2>Contact Information</h2>
-        <input type="text" placeholder="Current Address">
-        <input type="text" placeholder="Permanent Address">
-        <input type="number" placeholder="Primary Phone Number">
-        <input type="text" placeholder="Secondry Phone Number">
-        <input type="email" placeholder="Enter Email">
-        <label for="">Emergency Contact name and relationship</label>
-        <input type="text">
-    </section>
+        <section>
+            <h2>Contact Information</h2>
+            <input required type="text" placeholder="Current Address"><br>
+            <input required type="text" placeholder="Permanent Address"><br>
+            <input required type="number" placeholder="Primary Phone Number"><br>
+            <input required type="text" placeholder="Secondry Phone Number"><br>
+            <input required type="email" placeholder="Enter Email"><br>
+            <label required for="">Emergency Contact name and relationship</label>
+            <input required type="text"><br>
+        </section>
 
-    <section>
-        <h2>Employment Details</h2>
-        <label for="">Employee ID or badge Number</label>
-        <input type="text">
-        <input type="text" placeholder="Job title">
-        <input type="text" placeholder="Department">
-        <input type="number" placeholder="Employment Start date">
-        <select>
-            <option>Status</option>
-            <option>Full Time</option>
-            <option>Part-Time</option>
-            <option>Temporary</option>
-            <option>Contract</option>
-        </select>
-    </section>
-    <section>
-        <h2>Bank Details </h2>
-        <input type="text" placeholder="Enter Bank Name">
-        <input type="text" placeholder="Enter Branch Name">
-        <input type="number" placeholder="Bank Branch Code">
-        <input type="number" placeholder="Bank IFSC Number">
-        <input type="text" placeholder="Account Holder Name">
-        <input type="text" placeholder="Enter Bank Address">
-        <input type="number" placeholder="Account Number">
-        <input type="text" placeholder="Account type">
-    </section>
-    <section>
-        <h2>Compensation And Benefits</h2>
-        <label>salary details:</label>
-        <input type="text">
-        <label>Bank Account information for direct Deposit (if applicable)</label>
-        <input type="text">
-        <label> Health insurance policy Number:</label>
-        <input type="number">
-        <input type="text" placeholder="Tax information">
-        <input type="number" placeholder="Tax identification Number">
-        <label>Relevant tax forms or declaration (e.g, W-4 form in the US)</label>
-        <input type="text">
-    </section>
-    <section>
-        <h2>professional Credentials</h2>
-        <input type="text" placeholder="Certification Courses">
-        <input type="text" placeholder="Internship">
-        <input type="text" placeholder="Experiance">
-    </section>
-    <section>
-        <h2>Medical Information</h2>
-        <label>Specific medical Conditions or requirements</label>
-        <input type="text">
-        <label>Known allergies</label>
-        <input type="text">
-        <label>Preferred medical facility or practitioner (optional)</label>
-        <input type="text">
-    </section>
-    <section>
-        <h2>Additional Information (if applicable)</h2>
-        <input type="number" placeholder="Passport Number">
-        <input type="text" placeholder="Work Permit or visa details">
-        <input type="text" placeholder="vehicle details">
-    </section>
-    <section>
-        <h2>Consent and declaration</h2>
-        <label>Do yoy confirm the accuracy of the information provided and consent for your data to be processed in line with data protection regulation?</label>
-        <input type="text">
-    </section>
+        <section>
+            <h2>Employment Details</h2>
+            <label for="">Employee ID or badge Number</label>
+            <input required type="text"><br>
+            <input required type="text" placeholder="Job title"><br>
+            <input required type="text" placeholder="Department"><br>
+            <select>
+                <option>Department</option>
+                <option>Production</option>
+                <option>Reserch & Development</option>
+                <option>Account</option>
+                <option>Marketing</option>
+                <option>Sales</option>
+                <option>QA</option>
+                <option>Software Development</option>
+            </select> <br>
+            <label>Employment Start date</label>
+            <input type="date">
+            <br>
+            <select>
+                <option>Status</option>
+                <option>Full Time</option>
+                <option>Part-Time</option>
+                <option>Temporary</option>
+                <option>Contract</option>
+        </section><br>
+
+        <section>
+
+            <h2>Bank Details </h2> <br><br>
+            <input required type="text" placeholder="Enter Bank Name"><br>
+            <input required type="text" placeholder="Enter Branch Name"><br>
+            <input required type="number" placeholder="Bank Branch Code"><br>
+            <input required type="number" placeholder="Bank IFSC Number"><br>
+            <input required type="text" placeholder="Account Holder Name"><br>
+            <input required type="text" placeholder="Enter Bank Address"><br>
+            <input required type="number" placeholder="Account Number"><br>
+            <input required type="text" placeholder="Account type"><br>
+            <select>
+                <option>Account type</option>
+                <option>Saving</option>
+                <option>CC</option>
+                <option>Current</option>
+            </select>
+        </section><br>
+        <section>
+            <h2>Compensation And Benefits</h2>
+            <label>salary details:</label>
+            <input required required type="text"><br>
+            <label>Bank Account information for direct Deposit (if applicable)</label>
+            <input required type="text"><br>
+            <label> Health insurance policy Number:</label>
+            <input required type="number"><br>
+            <input required type="text" placeholder="Tax information"><br>
+            <input required type="number" placeholder="Tax identification Number"><br>
+            <label>Relevant tax forms or declaration (e.g, W-4 form in the US)</label>
+            <input required type="text"><br>
+        </section>
+        <section>
+            <h2>professional Credentials</h2>
+            <input required type="text" placeholder="Certification Courses"><br>
+            <input required type="text" placeholder="Internship"><br>
+            <input required type="text" placeholder="Experiance"><br>
+        </section>
+        <section>
+            <h2>Medical Information</h2>
+            <label>Specific medical Conditions or requirements</label>
+            <input required type="text"><br>
+            <label>Known allergies</label>
+            <input required type="text"><br>
+            <label>Preferred medical facility or practitioner (optional)</label>
+            <input required type="text"><br>
+        </section>
+        <section>
+            <h2>Additional Information (if applicable)</h2>
+            <input required type="number" placeholder="Passport Number"><br>
+            <input required type="text" placeholder="Work Permit or visa details"><br>
+            <inpu requiredt type="text" placeholder="vehicle details"><br>
+        </section>
+        <section>
+            <h2>Consent and declaration</h2>
+            <label>Do yoy confirm the accuracy of the information provided and consent for your data to be processed in
+                line with data protection regulation?</label>
+            <input type="text">
+        </section>
+        <input type="submit" value="Save">
+    </form>
 </body>
 
 </html>
